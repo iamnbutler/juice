@@ -1,2 +1,6 @@
 # juice
-An open-source music player.
+An open-source, plugin friendly music player.
+
+Built on web technologies, juice is easy to skin, write plugins for and hack yourself.
+
+This project is not yet underway. Interesting in this idea? Send me a note, I'd love to chat.
