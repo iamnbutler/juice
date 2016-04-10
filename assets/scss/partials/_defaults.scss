@@ -1,0 +1,26 @@
+// Apply a natural box layout model to all elements
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: #000000;
+}
+a:visited {
+  color: #333333;
+}
+a:hover {
+  color: #000000;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+// Selection Color
+// ::-moz-selection{background: #666; color: #fff; text-shadow: none;}
+// ::selection{background: #666; color: #fff; text-shadow: none;}
