@@ -10,6 +10,11 @@
 @import "partials/_mixins.scss";
 @import "partials/_defaults.scss";
 
+// Components
+@import "components/_app-header.scss";
+@import "components/_app-sidebar.scss";
+@import "components/_app-body.scss";
+
 // Pages
 
 @import "pages/_index.scss";
