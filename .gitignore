@@ -28,3 +28,9 @@ Desktop.ini
 
 config.codekit
 *.codekit
+
+#
+# APP SPECIFIC
+#
+
+library/

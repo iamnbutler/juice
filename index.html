@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="assets/css/screen.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<!-- <link rel="icon" href="/favicon.ico"> -->
 
 		<script>
@@ -62,21 +63,24 @@
 							SAVED LISTS
 						</header>
 					</div>
+					<div class="app-sidebar-import">
+						<a href="#" id="import-track"><i class="fa fa-fw fa-plus"></i></a>
+					</div>
 				</section>
 				<section class="app-body">
 					<div class="app-tab-bar">
 						<div class="app-tab-bar-tabs">
-							<a href="#tab">Library</a>
+							<a href="#tab" class="active">Library</a>
 							<a href="#tab">New Music</a>
 							<a href="#tab">Jazz Jams</a>
-							<a href="#tab" class="active">Purpose</a>
+							<a href="#tab">Purpose</a>
 							<a href="#tab">+</a>
 						</div>
 						<div class="app-tab-bar-search">
 							Find track, album, artist...
 						</div>
 					</div>
-					<div class="app-list-view">
+					<div class="app-list-view" id="list-view">
 						<div class="app-list-view-header">
 							<div class="app-list-view-filter" data-app-list-view-filter="#">
 								#
@@ -147,7 +151,11 @@
 									1
 								</div>
 							</section>
-
+							<section id="app-import-bar" class="app-list-view-import">
+								<label for="app-import-track">Import Track:</label>
+								<input type="file" id="app-import-track">
+								<audio id="import-audio"></audio>
+							</section>
 						</div>
 					</div>
 				</section>
@@ -155,6 +163,8 @@
 		</main>
 
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="assets/js/plugin.js"></script>
+		<script src="assets/js/upload.js"></script>
 		<script src="assets/js/scripts.js"></script>
 
 	</body>
