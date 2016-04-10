@@ -57,3 +57,20 @@
 .app-sidebar-group a {
 
 }
+
+// Add to Library
+
+.app-sidebar-import {
+  bottom: 0;
+  left: 0;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  color: $color-app-grey-4;
+  &:hover {
+    color: $color-app-black;
+  }
+}

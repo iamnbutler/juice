@@ -129,6 +129,19 @@ a:hover, a:active {
   .app-sidebar-group .row:last-child {
     margin-bottom: 8px; }
 
+.app-sidebar-import {
+  bottom: 0;
+  left: 0;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+  color: #888888; }
+  .app-sidebar-import:hover {
+    color: #1E1E1E; }
+
 .app-body {
   position: relative;
   width: 100%;
