@@ -1,0 +1,29 @@
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+#################
+## SASS
+#################
+
+*.scssc
+
+#################
+## Mac
+#################
+
+*.DS_Store
+*._.DS_Store
+
+
+#################
+# Codekit
+#################
+
+*.codekit
