@@ -7,6 +7,9 @@
 // App Header
 
 .app-header {
+	top: 0;
+	left: 0;
+	right: 0;
 	position: absolute;
   width: 100%;
   height: $app-header-height;
@@ -14,6 +17,35 @@
   border-bottom: 2px solid $color-app-grey-2;
   background-color: $color-app-grey-1;
 }
+
+.app-header-osx-controls {
+	padding: 16px 12px;
+	a {
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		border-radius: 12px;
+		border: 1px solid;
+		border: 0.2px solid;
+	}
+	a:not(:last-child) {
+		margin-right: 8px;
+	}
+	a:nth-child(1) {
+		background-color: #FF6159;
+		border-color: #E1453F;
+	}
+	a:nth-child(2) {
+		background-color: #FFBE2F;
+		border-color: #DFA023;
+	}
+	a:nth-child(3) {
+		background-color: #29C941;
+		border-color: #1BAC2C;
+	}
+}
+
+// App Wrapper
 
 .app-wrapper {
 	height: 100%;
@@ -23,6 +55,8 @@
   flex-flow: row wrap;
   justify-content: flex-start;
 }
+
+// App Sidebar
 
 .app-sidebar {
   width: 220px;
