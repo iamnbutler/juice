@@ -182,6 +182,7 @@ a:hover, a:active {
 
 .app-list-view-header {
   position: absolute;
+  background-color: #FFFFFF;
   display: flex;
   height: 39px;
   width: 100%;
@@ -200,7 +201,7 @@ a:hover, a:active {
   .app-list-view-filter:last-child {
     border-right: none; }
   .app-list-view-filter:hover {
-    background-color: #F5F5F5; }
+    background-color: #FAFAFA; }
 
 .app-list-view-filter span {
   color: #AAAAAA;
@@ -210,6 +211,20 @@ a:hover, a:active {
 
 .app-list-view-body {
   padding-top: 39px; }
+
+.app-list-view-row {
+  display: flex;
+  height: 32px;
+  font-family: "source-code-pro", "Source Code Pro", Source Code Pro, monospace !important; }
+  .app-list-view-row:nth-child(2n+1) {
+    background-color: #FFFFFF; }
+  .app-list-view-row:nth-child(2n) {
+    background-color: #FAFAFA; }
+
+.app-list-view-col {
+  padding: 10px 12px 9px 12px;
+  font-size: 13px;
+  flex-grow: 1; }
 
 .app-home main {
   width: 100%;
