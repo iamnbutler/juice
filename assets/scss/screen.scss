@@ -1,11 +1,14 @@
 // Reset
 
 @import "partials/_reset.scss";
-@import "partials/_defaults.scss";
 
-// Typography
+// Modules
+@import "partials/_variables.scss";
 
+// Partials
 @import "partials/_typography.scss";
+@import "partials/_mixins.scss";
+@import "partials/_defaults.scss";
 
 // Pages
 
