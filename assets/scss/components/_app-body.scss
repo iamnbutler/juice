@@ -1,6 +1,8 @@
 // App Body
 
 .app-body {
+  position: relative;
+
   width: 100%;
   height: 100%;
 
@@ -11,11 +13,15 @@
 
 // Tab Bar
 .app-tab-bar {
+  position: absolute;
+
   display: flex;
 
+  width: 100%;
   height: 57px;
 
   border-bottom: 1px solid $color-app-grey-2;
+  background-color: $color-app-white;
 }
 
 .app-tab-bar-tabs {
@@ -35,11 +41,12 @@
     margin-right: 28px;
   }
   &.active {
-  	color: $color-app-black;
+    color: $color-app-black;
   }
   &:hover {
-  	cursor: pointer;
-  	color: $color-app-black;
+    cursor: pointer;
+
+    color: $color-app-black;
   }
 }
 
@@ -53,10 +60,61 @@
 
   color: $color-text-grey-7;
   border: 1px solid $color-app-grey-2;
+  border-radius: 4px;
 
   flex: 1;
 }
 
 // List View
 .app-list-view {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  height: 100%;
+  padding-top: 57px;
+
+  background-color: $color-app-white;
+}
+
+// Filter Bar
+.app-list-view-header {
+  position: absolute;
+
+  display: flex;
+
+  height: 39px;
+  width: 100%;
+    border-bottom: 1px solid $color-app-grey-2;
+
+}
+
+.app-list-view-filter {
+  position: relative;
+  flex-grow: 1;
+  font-size: 13px;
+
+  height: 32px;
+  margin: 3px 0px 3px 0px;
+  padding: 10px 12px 9px 12px;
+
+  color: $color-app-black;
+  border-right: 1px solid $color-app-grey-2;
+  cursor: pointer;
+  &:last-child {
+    border-right: none;
+  }
+  &:hover {
+    background-color: $color-app-grey-1;
+  }
+}
+
+.app-list-view-filter span {
+  color: $color-app-grey-3;
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+}
+
+.app-list-view-body {
+  padding-top: 39px;
 }
