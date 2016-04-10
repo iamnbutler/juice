@@ -6,13 +6,13 @@
 }
 
 a {
-  color: #000000;
+  color: $default-link-color;
 }
 a:visited {
-  color: #333333;
+  color: $default-link-visited-color;
 }
 a:hover {
-  color: #000000;
+  color: $default-link-hover-color;
 }
 a:focus {
   outline: thin dotted;
