@@ -11,6 +11,13 @@
   flex: 1;
 }
 
+.app-body-clickable {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 // Tab Bar
 .app-tab-bar {
   position: absolute;
@@ -144,18 +151,24 @@
 .app-list-view-col {
   font-size: 13px;
 
+  overflow: hidden;
+
   padding: 10px 12px 9px 12px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   flex-grow: 1;
 }
 
 .app-list-view-import {
-  display: none;
   font-size: 13px;
 
   position: absolute;
   bottom: 0;
   left: 0;
+
+  display: none;
 
   width: 100%;
   height: 38px;
@@ -163,4 +176,39 @@
 
   border-top: 1px solid $color-app-grey-2;
   background-color: $color-app-grey-1;
+}
+
+[data-app-list-view-item="metadata"] {
+  display: none;
+}
+
+[data-app-list-view-filter="#"], [data-app-list-view-item="#"] {
+  flex: 0 0 32px;
+}
+
+[data-app-list-view-filter="title"], [data-app-list-view-item="title"] {
+  flex: 0 0 280px;
+}
+
+[data-app-list-view-filter="time"], [data-app-list-view-item="time"] {
+  flex: 0 0 60px;
+}
+
+
+[data-app-list-view-filter="artist"], [data-app-list-view-item="artist"] {
+  flex: 0 0 180px;
+}
+
+
+[data-app-list-view-filter="album"], [data-app-list-view-item="album"] {
+  flex: 0 0 180px;
+}
+
+
+[data-app-list-view-filter="genre"], [data-app-list-view-item="genre"] {
+  flex: 0 0 100px;
+}
+
+[data-app-list-view-filter="plays"], [data-app-list-view-item="plays"] {
+  flex: 0 0 100px;
 }

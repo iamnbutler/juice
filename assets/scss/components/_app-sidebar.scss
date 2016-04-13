@@ -61,10 +61,11 @@
 // Add to Library
 
 .app-sidebar-import {
+  @include type-monospace;
   bottom: 0;
   left: 0;
   height: 32px;
-  width: 32px;
+  width: 262px;
   position: absolute;
   line-height: 32px;
   text-align: center;
@@ -72,5 +73,15 @@
   color: $color-app-grey-4;
   &:hover {
     color: $color-app-black;
+  }
+}
+
+.app-sidebar-import a {
+  position: absolute;
+  padding: 0 12px;
+  left: 0;
+  top: 0;
+  &:hover {
+    background-color: $color-app-grey-1;
   }
 }
