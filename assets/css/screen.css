@@ -71,10 +71,12 @@ a:hover, a:active {
   left: 0;
   width: 100%;
   height: 48px;
+  display: flex;
   border-bottom: 2px solid #EFEFEF;
   background-color: #F5F5F5; }
 
 .app-header-osx-controls {
+  flex: 0 0 80px;
   padding: 16px 12px; }
   .app-header-osx-controls a {
     display: inline-block;
@@ -94,6 +96,53 @@ a:hover, a:active {
   .app-header-osx-controls a:nth-child(3) {
     border-color: #1bac2c;
     background-color: #29c941; }
+
+.app-header-track-display {
+  flex-grow: 1;
+  padding: 16px 23px; }
+
+.app-header-control-tools {
+  flex: 0 0 104px;
+  padding: 16px 23px; }
+  .app-header-control-tools a {
+    display: inline-block;
+    color: #888888; }
+    .app-header-control-tools a:not(:last-child) {
+      margin-right: 8px; }
+    .app-header-control-tools a.app-play {
+      font-size: 16px; }
+    .app-header-control-tools a.app-pause {
+      font-size: 16px;
+      display: none; }
+  .app-header-control-tools a.active {
+    color: #1E1E1E; }
+
+.app-header-control-tools a.app-control-show {
+  display: inline-block;
+  opacity: 1; }
+
+.app-header-control-tools a.app-control-hide {
+  display: none;
+  opacity: 0; }
+
+.app-header-track-progress {
+  flex: 3;
+  padding: 16px 23px; }
+
+.app-header-play-tools {
+  flex: 0 0 104px;
+  padding: 16px 23px; }
+  .app-header-play-tools a {
+    display: inline-block;
+    color: #888888; }
+    .app-header-play-tools a:first-child {
+      margin-right: 12px; }
+  .app-header-play-tools a.active {
+    color: #1E1E1E; }
+
+.app-header-volume {
+  flex: 1;
+  padding: 16px 23px; }
 
 .app-sidebar {
   width: 220px;
@@ -130,10 +179,11 @@ a:hover, a:active {
     margin-bottom: 8px; }
 
 .app-sidebar-import {
+  font-family: "source-code-pro", "Source Code Pro", Source Code Pro, monospace !important;
   bottom: 0;
   left: 0;
   height: 32px;
-  width: 32px;
+  width: 262px;
   position: absolute;
   line-height: 32px;
   text-align: center;
@@ -142,12 +192,25 @@ a:hover, a:active {
   .app-sidebar-import:hover {
     color: #1E1E1E; }
 
+.app-sidebar-import a {
+  position: absolute;
+  padding: 0 12px;
+  left: 0;
+  top: 0; }
+  .app-sidebar-import a:hover {
+    background-color: #F5F5F5; }
+
 .app-body {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: #FFFFFF;
   flex: 1; }
+
+.app-body-clickable {
+  cursor: pointer; }
+  .app-body-clickable:hover {
+    text-decoration: underline; }
 
 .app-tab-bar {
   position: absolute;
@@ -236,20 +299,47 @@ a:hover, a:active {
 
 .app-list-view-col {
   font-size: 13px;
+  overflow: hidden;
   padding: 10px 12px 9px 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   flex-grow: 1; }
 
 .app-list-view-import {
-  display: none;
   font-size: 13px;
   position: absolute;
   bottom: 0;
   left: 0;
+  display: none;
   width: 100%;
   height: 38px;
   padding: 10px 12px 9px 12px;
   border-top: 1px solid #EFEFEF;
   background-color: #F5F5F5; }
+
+[data-app-list-view-item="metadata"] {
+  display: none; }
+
+[data-app-list-view-filter="#"], [data-app-list-view-item="#"] {
+  flex: 0 0 32px; }
+
+[data-app-list-view-filter="title"], [data-app-list-view-item="title"] {
+  flex: 0 0 280px; }
+
+[data-app-list-view-filter="time"], [data-app-list-view-item="time"] {
+  flex: 0 0 60px; }
+
+[data-app-list-view-filter="artist"], [data-app-list-view-item="artist"] {
+  flex: 0 0 180px; }
+
+[data-app-list-view-filter="album"], [data-app-list-view-item="album"] {
+  flex: 0 0 180px; }
+
+[data-app-list-view-filter="genre"], [data-app-list-view-item="genre"] {
+  flex: 0 0 100px; }
+
+[data-app-list-view-filter="plays"], [data-app-list-view-item="plays"] {
+  flex: 0 0 100px; }
 
 .app-home main {
   width: 100%;

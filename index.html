@@ -31,6 +31,21 @@
 					<a href="#!"></a>
 					<a href="#!"></a>
 				</div>
+				<div class="app-header-track-display"></div>
+				<div class="app-header-control-tools">
+					<a href="#!"><i class="fa fa-step-backward"></i></a>
+					<a href="#!" class="app-play active"><i class="fa fa-play"></i></a>
+					<a href="#!" class="app-pause active"><i class="fa fa-pause"></i></a>
+					<a href="#!"><i class="fa fa-step-forward"></i></a>
+				</div>
+				<div class="app-header-track-progress">
+					<div class="app-header-track-progress-bar"></div>
+				</div>
+				<div class="app-header-play-tools">
+					<a href="#!"><i class="fa fa-fw fa-random"></i></a>
+					<a href="#!" class="active"><i class="fa fa-fw fa-repeat"></i></a>
+				</div>
+				<div class="app-header-volume"></div>
 			</section>
 			<div class="app-wrapper">
 				<section class="app-sidebar">
@@ -64,7 +79,7 @@
 						</header>
 					</div>
 					<div class="app-sidebar-import">
-						<a href="#" id="import-track"><i class="fa fa-fw fa-plus"></i></a>
+						<a href="#" id="import-track"><i class="fa fa-fw fa-plus"></i> Add to Library</a>
 					</div>
 				</section>
 				<section class="app-body">
@@ -105,52 +120,6 @@
 							</div>
 						</div>
 						<div class="app-list-view-body">
-							<section class="app-list-view-row">
-								<div class="app-list-view-col" data-app-list-view-item="#">
-									1
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="title">
-									Mark My Words
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="time">
-									2:14
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="artist">
-									Justin Bieber
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="album">
-									Purpose
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="genre">
-									Pop
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="plays">
-									1
-								</div>
-							</section>
-							<section class="app-list-view-row">
-								<div class="app-list-view-col" data-app-list-view-item="#">
-									1
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="title">
-									Mark My Words
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="time">
-									2:14
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="artist">
-									Justin Bieber
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="album">
-									Purpose
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="genre">
-									Pop
-								</div>
-								<div class="app-list-view-col" data-app-list-view-item="plays">
-									1
-								</div>
-							</section>
 							<section id="app-import-bar" class="app-list-view-import">
 								<label for="app-import-track">Import Track:</label>
 								<input type="file" id="app-import-track">
@@ -163,8 +132,13 @@
 		</main>
 
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="assets/js/plugin/howler.js"></script>
+		<script src="assets/js/plugin/jsmediatags.js"></script>
 		<script src="assets/js/plugin.js"></script>
 		<script src="assets/js/upload.js"></script>
+		<script src="assets/js/play.js"></script>
+		<script src="assets/js/scanner.js"></script>
+		<script src="assets/js/controls.js"></script>
 		<script src="assets/js/scripts.js"></script>
 
 	</body>
