@@ -8,12 +8,14 @@
 
   width: 100%;
   height: $app-header-height;
+  display: flex;
 
   border-bottom: 2px solid $color-app-grey-2;
   background-color: $color-app-grey-1;
 }
 
 .app-header-osx-controls {
+  flex: 0 0 80px;
   padding: 16px 12px;
   a {
     display: inline-block;
@@ -40,4 +42,66 @@
     border-color: #1bac2c;
     background-color: #29c941;
   }
+}
+
+.app-header-track-display {
+  flex-grow: 1;
+  padding: 16px 23px;
+}
+
+.app-header-control-tools {
+  flex: 0 0 104px;
+  padding: 16px 23px;
+  a {
+    display: inline-block;
+    color: $color-app-grey-4;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &.app-play {
+      font-size: 16px;
+    }
+    &.app-pause {
+      font-size: 16px;
+      display: none;
+    }
+  }
+  a.active {
+    color: $color-app-black;
+  }
+}
+
+.app-header-control-tools a.app-control-show {
+  display: inline-block;
+  opacity: 1;
+}
+
+.app-header-control-tools a.app-control-hide {
+  display: none;
+  opacity: 0;
+}
+
+.app-header-track-progress {
+  flex: 3;
+  padding: 16px 23px;
+}
+
+.app-header-play-tools {
+  flex: 0 0 104px;
+  padding: 16px 23px;
+  a {
+    display: inline-block;
+    color: $color-app-grey-4;
+    &:first-child {
+      margin-right: 12px;
+    }
+  }
+  a.active {
+    color: $color-app-black;
+  }
+}
+
+.app-header-volume {
+  flex: 1;
+  padding: 16px 23px;
 }
